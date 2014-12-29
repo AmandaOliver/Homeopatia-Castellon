@@ -409,7 +409,7 @@ Hay que individualizar cada caso y administrar el remedio unico.</h4>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <div class="col-md-12">
+
 
                         <?php  if($libros!=FALSE){
 
@@ -451,7 +451,7 @@ Hay que individualizar cada caso y administrar el remedio unico.</h4>
                      </div>
                 </div>
 
-                </div>
+
 
             </div>
         </div>

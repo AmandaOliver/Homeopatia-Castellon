@@ -30,7 +30,7 @@ class Noticias_controller extends CI_Controller{
             $enlace = $this->input->post('enlace');
             $fecha=date("Y-m-d H:i:s");
             $this->noticias_model->añadir($titular,$resumen,$enlace,$fecha);
-            $data["message"]="<div class='alert alert-success'>La noticia se ha guardado correctamente. ¡Gracias¡</div>";
+            $data["message"]="<div class='alert alert-success'>La noticia se ha guardado correctamente. ¡Gracias!</div>";
             $this->load->view('insertar_noticia_view',$data);
         }
 
@@ -71,7 +71,7 @@ class Noticias_controller extends CI_Controller{
             $fecha=date("Y-m-d H:i:s");
             $this->noticias_model->editar($titular,$enlace,$resumen,$fecha,$id);
             $data=array(
-                "message"=>"<div class='alert alert-success'>La noticia se ha editado correctamente. ¡Gracias¡</div>",
+                "message"=>"<div class='alert alert-success'>La noticia se ha editado correctamente. ¡Gracias!</div>",
                 "id"=>"",
                 "titular"=>"",
                 "resumen"=>"",

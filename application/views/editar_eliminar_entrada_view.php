@@ -53,26 +53,27 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>administrador_controller">Menu principal</a>
+                             <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>administrador_controller">Menú ppal.</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_entrada">Añadir entrada</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_entrada">Añ. entrada</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_noticia">Añadir noticia</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_noticia">Añ. noticia</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_libro">Añadir libro</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_libro">Añ. libro</a>
                     </li>
-
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_noticia">Editar o eliminar noticia</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_entrada">Editar/eliminar entrada</a>
                     </li>
-                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_libro">Editar o eliminar libro</a>
+                    <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_noticia">Editar/eliminar noticia</a>
                     </li>
-
+                    <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_libro">Editar/eliminar libro</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -120,7 +121,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="btn-group" role="group" aria-label="...">
-                        <?php $n=$pb-1; if($n>0){echo '<a class="btn btn-noticias" role="button" href='.base_url(). ' menu_controller/pagina_blog/ '.$n. '> Anterior </a>';} for($i=1;$i
+                        <?php $n=$pb-1; if($n>0){echo '<a class="btn btn-noticias" role="button" href='.base_url(). 'menu_controller/pagina_blog/'.$n. ' > Anterior </a>';} for($i=1;$i
                         <=$paginas_blog;$i++){ ?>
 
                             <a class="btn btn-noticias" role="button" href=<?php echo base_url();?>menu_controller/pagina_blog/<?php echo $i;?>>

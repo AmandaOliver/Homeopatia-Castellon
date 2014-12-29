@@ -35,11 +35,11 @@ class Main_controller extends CI_Controller{
             $data["message"]="";
             $this->load->view('main_view',$data);
         }else{
-            $data["message"]="<div class='alert alert-success'>El correo electrónico se ha enviado correctamente. ¡Gracias¡</div>";
+            $data["message"]="<div class='alert alert-success'>El correo electrónico se ha enviado correctamente. ¡Gracias!</div>";
             $this->load->view('main_view',$data);
             $this->load->library('email');
             $this->email->from(set_value("correo"), set_value("nombre"));
-            $this->email->to("amynahmas@hotmail.es");
+            $this->email->to("amynahmas@gmail.com");
             $this->email->subject("Mensaje de la maravillosísima página web Homeopatía Castellón");
             $this->email->message(set_value("mensaje"));
             $this->email->send();

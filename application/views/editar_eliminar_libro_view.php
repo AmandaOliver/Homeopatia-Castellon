@@ -53,26 +53,27 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>administrador_controller">Menu principal</a>
+                             <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>administrador_controller">Menú ppal.</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_entrada">Añadir entrada</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_entrada">Añ. entrada</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_noticia">Añadir noticia</a>
-                    </li>
-                      <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_libro">Añadir libro</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_noticia">Añ. noticia</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_entrada">Editar o eliminar entrada</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/insertar_libro">Añ. libro</a>
                     </li>
-
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_noticia">Editar o eliminar noticia</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_entrada">Editar/eliminar entrada</a>
                     </li>
-
+                    <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_noticia">Editar/eliminar noticia</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="<?php echo base_url();?>menu_controller/editar_eliminar_libro">Editar/eliminar libro</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

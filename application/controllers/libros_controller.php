@@ -24,7 +24,7 @@ class libros_controller extends CI_Controller{
             $editorial = $this->input->post('editorial');
             $sinopsis = $this->input->post('sinopsis');
             $this->libros_model->añadir($titulo,$autor,$editorial,$sinopsis);
-            $data["message"]="<div class='alert alert-success'>El libro se ha guardado correctamente. ¡Gracias¡</div>";
+            $data["message"]="<div class='alert alert-success'>El libro se ha guardado correctamente. ¡Gracias!</div>";
             $this->load->view('insertar_libro_view',$data);
         }
 
@@ -67,7 +67,7 @@ class libros_controller extends CI_Controller{
             $id = $this->input->post('id');
             $this->libros_model->editar($titulo,$autor,$editorial,$sinopsis,$id);
             $data=array(
-                "message"=>"<div class='alert alert-success'>La libro se ha editado correctamente. ¡Gracias¡</div>",
+                "message"=>"<div class='alert alert-success'>La libro se ha editado correctamente. ¡Gracias!</div>",
                 "id"=>"",
                 "titulo"=>"",
                 "autor"=>"",

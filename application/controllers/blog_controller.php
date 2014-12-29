@@ -28,7 +28,7 @@ class Blog_controller extends CI_Controller{
             $cuerpo = $this->input->post('cuerpo');
             $fecha=date("Y-m-d H:i:s");
             $this->blog_model->añadir($titulo,$cuerpo,$fecha);
-            $data["message"]="<div class='alert alert-success'>La entrada del blog se ha guardado correctamente. ¡Gracias¡</div>";
+            $data["message"]="<div class='alert alert-success'>La entrada del blog se ha guardado correctamente. ¡Gracias!</div>";
             $this->load->view('insertar_entrada_view',$data);
         }
 
@@ -66,7 +66,7 @@ class Blog_controller extends CI_Controller{
             $fecha=date("Y-m-d H:i:s");
             $this->blog_model->editar($titulo,$cuerpo,$fecha,$id);
             $data=array(
-                "message"=>"<div class='alert alert-success'>La entrada del blog se ha editado correctamente. ¡Gracias¡</div>",
+                "message"=>"<div class='alert alert-success'>La entrada del blog se ha editado correctamente. ¡Gracias!</div>",
                 "id"=>"",
                 "titulo"=>"",
                 "cuerpo"=>""
