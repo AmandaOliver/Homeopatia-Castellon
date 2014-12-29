@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond $1 !^(index.php|css|assets|js|images|fonts|less|mail|scss|robots.txt) 
 RewriteRule ^(.*)$ /HomeopatiaCastellon/index.php/$1 [L]
