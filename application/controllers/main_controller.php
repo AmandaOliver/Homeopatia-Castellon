@@ -39,7 +39,7 @@ class Main_controller extends CI_Controller{
             $this->load->view('main_view',$data);
             $this->load->library('email');
             $this->email->from(set_value("correo"), set_value("nombre"));
-            $this->email->to("amynahmas@gmail.com");
+            $this->email->to("maiteinglada@gmail.com");
             $this->email->subject("Mensaje de la maravillosísima página web Homeopatía Castellón");
             $this->email->message(set_value("mensaje"));
             $this->email->send();
