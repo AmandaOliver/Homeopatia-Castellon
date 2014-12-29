@@ -476,7 +476,7 @@ Hay que individualizar cada caso y administrar el remedio unico.</h4>
                                         <p>Calle San Roque nº 21 7º Piso<br>
                                         12004 Castellón<br>
                                         <abbr title="Phone">Tel:</abbr> 964 24 25 21<br>616 99 61 24</p>
-                                        <a class="correo" href="mailto:#">maiteinglada@gmail.com</a>
+                                        <a class="correo" href="mailto:maiteinglada@gmail.com">maiteinglada@gmail.com</a>
                                 </address>
                             </div>
 
