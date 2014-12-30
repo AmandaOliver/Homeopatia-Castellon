@@ -1,4 +1,23 @@
-RewriteEngine on
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteCond $1 !^(index.php|css|assets|js|images|fonts|less|mail|scss|robots.txt) 
-RewriteRule ^(.*)$ /HomeopatiaCastellon/index.php/$1 [L]
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+#RewriteEngine on
+#RewriteCond %{ENV:REDIRECT_STATUS} ^$
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond $1 !^(index.php|css|assets|js|images|fonts|less|mail|scss|robots.txt) 
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+ErrorDocument 404 /index.php
+</IfModule>

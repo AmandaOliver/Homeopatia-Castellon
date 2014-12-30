@@ -572,7 +572,7 @@ Hay que individualizar cada caso y administrar el remedio unico.</h4>
                 </div>
             </div>
         </div>
-        <p><a href="<?php echo base_url();?>Login_controller">¿Eres administrador?</a></p>
+        <p><a href="<?php echo base_url();?>login_controller">¿Eres administrador?</a></p>
     </footer>
 
     <!-- jQuery -->
