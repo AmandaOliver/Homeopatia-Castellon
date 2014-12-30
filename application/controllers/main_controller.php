@@ -32,8 +32,21 @@ class Main_controller extends CI_Controller{
         $this->form_validation->set_rules("mensaje", "Mensaje", "required|xss_clean");
         $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
         if($this->form_validation->run() == FALSE){
-            $data["message"]="";
-            $this->load->view('main_view',$data);
+           $elementos_pagina=4;
+        $data=array(
+            "elementos_pagina" => $elementos_pagina,
+            "paginas_blog" => $this->blog_model->numero_paginas($elementos_pagina),
+            "entradas" => $this->blog_model->traer_pagina(1,$elementos_pagina),
+            "pb" => 1,
+            "paginas_noticias" => $this->noticias_model->numero_paginas($elementos_pagina),
+            "noticias" => $this->noticias_model->traer_pagina(1,$elementos_pagina),
+            "pn"=>1,
+            "paginas_libros" => $this->libros_model->numero_paginas($elementos_pagina),
+            "libros" => $this->libros_model->traer_pagina(1,$elementos_pagina),
+            "pl"=>1,
+            "message" => ""
+        );
+        $this->load->view('main_view',$data);
         }else{
             $data["message"]="<div class='alert alert-success'>El correo electrónico se ha enviado correctamente. ¡Gracias!</div>";
             $this->load->view('main_view',$data);
